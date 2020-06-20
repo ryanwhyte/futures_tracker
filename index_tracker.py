@@ -18,7 +18,7 @@ while datetime(current_year, current_month, current_day, 14) < datetime.now() < 
     c = r.content
     soup = BeautifulSoup(c, "html.parser")
 
-    file = r"C:\Users\Ryan Whyte\programming\my_projects\index_tracker_venv\You_suffer.mp3"
+    file = "You_suffer.mp3"
 
     spfutures = soup.find("td", {"id":"sb_changepc_8839"}).text.replace("+","").replace("-","").replace("%","")
     spfutures = float(spfutures)
